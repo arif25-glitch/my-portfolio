@@ -34,10 +34,9 @@ const Footer = () => {
 
   // Social links
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/yourusername' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },
-    { name: 'Twitter', url: 'https://twitter.com/yourusername' },
-    { name: 'Instagram', url: 'https://instagram.com/yourusername' }
+    { name: 'GitHub', url: 'https://github.com/arif25-glitch' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/arif-nur-listanto-programmer-backend' },
+    { name: 'Portfolio', url: 'https://my-portfolio-arif-nur.vercel.app' }
   ];
 
   return (
@@ -46,10 +45,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70 hover:opacity-80 transition-opacity mb-4 inline-block">
+            <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#33d117] to-[#17a85d] hover:opacity-80 transition-opacity mb-4 inline-block">
               Arif Nur Listanto
             </Link>
-            <p className="text-muted-foreground mb-4 max-w-md">
+            <p className="text-gray-600 mb-4 max-w-md">
               Menciptakan pengalaman digital yang indah, fungsional, dan ramah pengguna dengan teknologi modern dan kode yang bersih.
             </p>
             <div className="flex space-x-4">
@@ -59,7 +58,7 @@ const Footer = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-gray-500 hover:text-[#33d117] transition-colors"
                   aria-label={link.name}
                 >
                   {link.name}
@@ -89,9 +88,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Kontak</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>arif@example.com</li>
-              <li>+62 812 3456 7890</li>
-              <li>Jakarta, Indonesia</li>
+              <li>anurlistanto@gmail.com</li>
+              <li>+62 83160219420</li>
+              <li>Bandar Lampung, Indonesia</li>
             </ul>
           </div>
         </div>
@@ -110,7 +109,7 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed right-6 bottom-6 p-3 rounded-full bg-primary text-primary-foreground shadow-lg z-40 transition-all duration-300 ${
+        className={`fixed right-6 bottom-6 p-3 rounded-full bg-[#33d117] text-white shadow-lg z-40 transition-all duration-300 ${
           showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
         aria-label="Scroll to top"

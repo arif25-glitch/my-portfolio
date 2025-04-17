@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <h1>✨ Arif Nur Listanto | Portfolio ✨</h1>
+  <p>A modern, responsive developer portfolio showcasing my skills and projects</p>
+  
+  <div>
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
+    <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  </div>
+</div>
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+This portfolio website showcases my professional journey, skills, and projects as a full-stack developer. With a clean, modern UI and smooth animations, the site reflects my approach to creating engaging digital experiences.
+
+## ✨ Features
+
+- **Responsive Design**: Seamlessly adapts to all devices and screen sizes
+- **Interactive UI**: Engaging user experience with smooth animations and transitions
+- **Performance Optimized**: Fast loading times and optimized assets
+- **Accessibility Focused**: Built with web accessibility best practices
+- **Modern Tech Stack**: Developed using cutting-edge web technologies
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js
+- **Frontend**: React, TailwindCSS, Framer Motion
+- **Styling**: Modern CSS with Tailwind
+- **Animations**: Framer Motion for fluid interactions
+- **Deployment**: Vercel
+
+## 📱 Sections
+
+- **Hero**: Introduction and role overview with dynamic text animation
+- **About**: Personal journey, skills, and professional timeline
+- **Projects**: Showcase of featured development work
+- **Contact**: Easy ways to get in touch
+
+## 🔧 Development
 
 ```bash
+# Clone the repository
+git clone <repository-url>
+
+# Navigate to the directory
+cd portfolio-next
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📞 Contact
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Feel free to reach out if you have any questions or would like to collaborate!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 💬 WhatsApp: [+6283160219420](https://wa.me/6283160219420)
 
-## Learn More
+## 💖 Acknowledgements
 
-To learn more about Next.js, take a look at the following resources:
+Special thanks to all my mentors and collaborators who have been part of my journey.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  <p>Designed & Developed with ❤️ by Arif Nur Listanto</p>
+</div>

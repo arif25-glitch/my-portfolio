@@ -11,19 +11,19 @@
   --card-foreground: 240 10% 3.9%;
   --popover: 0 0% 100%;
   --popover-foreground: 240 10% 3.9%;
-  --primary: 240 5.9% 10%;
+  --primary: 138 78% 45%;  /* Updated to #33d117 in HSL */
   --primary-foreground: 0 0% 98%;
-  --secondary: 240 4.8% 95.9%;
-  --secondary-foreground: 240 5.9% 10%;
-  --muted: 240 4.8% 95.9%;
-  --muted-foreground: 240 3.8% 46.1%;
-  --accent: 240 4.8% 95.9%;
-  --accent-foreground: 240 5.9% 10%;
+  --secondary: 138 78% 96%;  /* Light green for secondary */
+  --secondary-foreground: 138 78% 25%;
+  --muted: 138 10% 96%;
+  --muted-foreground: 138 10% 40%;
+  --accent: 138 78% 94%;
+  --accent-foreground: 138 78% 30%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
-  --border: 240 5.9% 90%;
-  --input: 240 5.9% 90%;
-  --ring: 142.1 76.2% 36.3%;
+  --border: 138 10% 90%;
+  --input: 138 10% 90%;
+  --ring: 138 78% 45%;
   --radius: 0.75rem;
 }
 
@@ -50,7 +50,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Modern animated gradient */
+/* Modern animated gradient with green theme */
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -58,7 +58,7 @@ body {
 }
 
 .animated-gradient {
-  background: linear-gradient(-45deg, hsl(var(--primary)), hsl(var(--ring)), hsl(var(--accent-foreground)), hsl(var(--destructive)));
+  background: linear-gradient(-45deg, #33d117, #40e263, #17a85d, #0dbb74);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -157,7 +157,7 @@ body {
 /* Noise Texture */
 .noise-texture {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3C/svg%3E");
-  opacity: 0.05;
+  opacity: 0.02;
 }
 
 /* Sparkles */
@@ -187,17 +187,17 @@ body {
   }
 }
 
-/* Modern background gradient variations */
+/* Modern background gradient variations with green theme */
 .bg-gradient-modern-1 {
-  background: linear-gradient(to right, #ff3d7f, #ff9e9e, #7a2c9e);
+  background: linear-gradient(to right, #33d117, #40e263, #17a85d);
 }
 
 .bg-gradient-modern-2 {
-  background: linear-gradient(to right, #3494e6, #ec6ead);
+  background: linear-gradient(to right, #0dbb74, #33d117);
 }
 
 .bg-gradient-modern-3 {
-  background: linear-gradient(to right, #654ea3, #eaafc8);
+  background: linear-gradient(to right, #17a85d, #40e263);
 }
 
 /* Improved gradient animation */
@@ -228,7 +228,7 @@ body {
   animation: gradient-shift 8s ease infinite;
 }
 
-/* Enhanced scrollbar progress styles */
+/* Enhanced scrollbar progress styles with green theme */
 .scroll-progress-bar {
   position: absolute;
   bottom: 0;
@@ -241,11 +241,63 @@ body {
 
 .scroll-progress-indicator {
   height: 100%;
-  background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899);
+  background: linear-gradient(to right, #33d117, #40e263, #17a85d);
   background-size: 200% auto;
   animation: gradient-shift 8s ease infinite;
   transition: width 0.3s ease-out;
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 10px rgba(51, 209, 23, 0.5);
+}
+
+/* Add new utility classes for Framer Motion integration */
+.bg-size-200 {
+  background-size: 200% 200%;
+}
+
+/* Fix some mobile-specific issues */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* New clean background styles */
+.bg-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+}
+
+.clean-gradient {
+  background: linear-gradient(to right, #f0f4ff, #ffffff, #f5f0ff);
+}
+
+/* Keyframes for smooth transitions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* More animation utilities */
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
 }
 
 /* Add any other CSS enhancements here */

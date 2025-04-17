@@ -56,20 +56,20 @@ const Contact = () => {
     {
       icon: <EnvelopeIcon className="h-6 w-6" />,
       title: "Email",
-      value: "arif@example.com",
-      link: "mailto:arif@example.com"
+      value: "anurlistanto@gmail.com",
+      link: "mailto:anurlistanto@gmail.com"
     },
     {
       icon: <PhoneIcon className="h-6 w-6" />,
       title: "Telepon",
-      value: "+62 812 3456 7890",
-      link: "tel:+6281234567890"
+      value: "+62 83160219420",
+      link: "tel:+6283160219420"
     },
     {
       icon: <MapPinIcon className="h-6 w-6" />,
       title: "Lokasi",
-      value: "Jakarta, Indonesia",
-      link: "https://maps.google.com/?q=Jakarta,+Indonesia"
+      value: "Bandar Lampung, Indonesia",
+      link: "https://maps.google.com/?q=Jalan+Romowijoyo+No.51,+Sawah+Brebes,+Tanjung+Karang+Timur,+Bandar+Lampung"
     }
   ];
 
@@ -84,21 +84,21 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className={`transition-all duration-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block px-3 py-1 bg-primary/10 rounded-full text-primary text-sm font-medium mb-3">
+            <span className="inline-block px-3 py-1 bg-[#33d117]/10 rounded-full text-[#33d117] text-sm font-medium mb-3">
               Kontak
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#33d117] to-[#17a85d]">
               Hubungi Saya
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-gray-600">
               Punya pertanyaan atau ingin bekerja sama? Jangan ragu untuk menghubungi!
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className={`bg-card rounded-xl p-8 shadow-md border border-border/40 transition-all duration-500 delay-100 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <h3 className="text-xl font-semibold mb-6 text-foreground">Kirim Pesan</h3>
+            <div className={`bg-white rounded-xl p-8 shadow-md border border-gray-100 transition-all duration-500 delay-100 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+              <h3 className="text-xl font-semibold mb-6 text-gray-900">Kirim Pesan</h3>
 
               {submitted ? (
                 <div className="bg-green-50 dark:bg-green-900/20 text-green-800 dark:text-green-300 rounded-lg p-4 animate-fade-in">

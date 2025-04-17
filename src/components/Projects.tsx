@@ -22,30 +22,30 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Platform E-commerce Modern",
-      description: "Solusi e-commerce full-stack dengan React, Node.js, dan integrasi Stripe untuk pembayaran yang aman.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Backend Development Projects",
+      description: "Pengembangan backend dengan Laravel dan Django untuk berbagai aplikasi web dengan fokus pada performa dan keamanan.",
+      tags: ["Laravel", "Django", "PHP", "Python"],
       image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
       demoUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/arif25-glitch"
     },
     {
       id: 2,
-      title: "Pembuat Gambar AI",
-      description: "Aplikasi web yang menggunakan API OpenAI untuk menghasilkan gambar dari deskripsi teks.",
-      tags: ["NextJS", "OpenAI", "TailwindCSS", "TypeScript"],
+      title: "Frontend Web Applications",
+      description: "Aplikasi web dengan antarmuka yang responsif dan user-friendly menggunakan React dan teknologi modern.",
+      tags: ["React", "JavaScript", "TailwindCSS", "HTML/CSS"],
       image: "https://images.unsplash.com/photo-1683009427513-28e163402d16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
-      demoUrl: "#",
-      githubUrl: "#"
+      demoUrl: "https://my-portfolio-arif-nur.vercel.app",
+      githubUrl: "https://github.com/arif25-glitch"
     },
     {
       id: 3,
-      title: "Dashboard Media Sosial",
-      description: "Dashboard responsif untuk analitik media sosial dengan visualisasi data waktu nyata.",
-      tags: ["Vue", "Firebase", "D3.js", "Tailwind"],
+      title: "IoT Technology Projects",
+      description: "Proyek Internet of Things yang menggabungkan hardware dan software untuk solusi teknologi inovatif.",
+      tags: ["IoT", "Embedded Systems", "Python", "Hardware"],
       image: "https://images.unsplash.com/photo-1673800479833-d0dd16379f2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
       demoUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/arif25-glitch"
     }
   ];
 
@@ -67,10 +67,10 @@ const Projects = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`transition-all duration-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block px-3 py-1 bg-primary/10 rounded-full text-primary text-sm font-medium mb-3">
+            <span className="inline-block px-3 py-1 bg-[#33d117]/10 rounded-full text-[#33d117] text-sm font-medium mb-3">
               Portfolio
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#33d117] to-[#17a85d]">
               Proyek Terbaru Saya
             </h2>
             <p className="text-muted-foreground">
@@ -86,8 +86,8 @@ const Projects = () => {
                 onClick={() => setActiveFilter(tag)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   activeFilter === tag 
-                    ? 'bg-primary text-primary-foreground' 
-                    : 'bg-secondary hover:bg-secondary/80 text-foreground'
+                    ? 'bg-[#33d117] text-white' 
+                    : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
                 }`}
               >
                 {tag === 'all' ? 'Semua' : tag}
@@ -100,7 +100,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div 
                 key={project.id}
-                className={`card-hover group bg-card rounded-xl overflow-hidden shadow-md transition-all duration-500 ${
+                className={`card-hover group bg-white rounded-xl overflow-hidden shadow-md transition-all duration-500 ${
                   visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
@@ -116,29 +116,29 @@ const Projects = () => {
                 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-card-foreground group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900 group-hover:text-[#33d117] transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4 text-sm">
+                  <p className="text-gray-600 mb-4 text-sm">
                     {project.description}
                   </p>
                   
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map(tag => (
-                      <span key={tag} className="text-xs px-2 py-1 bg-secondary rounded-full">
+                      <span key={tag} className="text-xs px-2 py-1 bg-[#33d117]/10 text-[#33d117] rounded-full">
                         {tag}
                       </span>
                     ))}
                   </div>
                   
                   {/* Links */}
-                  <div className="flex justify-between mt-auto pt-4 border-t border-border/40">
+                  <div className="flex justify-between mt-auto pt-4 border-t border-gray-100">
                     <a 
                       href={project.demoUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                      className="inline-flex items-center text-sm font-medium text-[#33d117] hover:text-[#17a85d] transition-colors"
                     >
                       <GlobeAltIcon className="h-4 w-4 mr-1" />
                       Live Demo
@@ -147,7 +147,7 @@ const Projects = () => {
                       href={project.githubUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                      className="inline-flex items-center text-sm font-medium text-[#33d117] hover:text-[#17a85d] transition-colors"
                     >
                       <CodeBracketIcon className="h-4 w-4 mr-1" />
                       View Code
@@ -161,10 +161,10 @@ const Projects = () => {
           {/* More Projects Button */}
           <div className="text-center mt-12">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/arif25-glitch" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 border border-primary/50 rounded-lg text-primary hover:bg-primary/5 transition-colors"
+              className="inline-block px-6 py-3 border border-[#33d117]/50 rounded-lg text-[#33d117] hover:bg-[#33d117]/5 transition-colors"
             >
               Lihat Lebih Banyak Proyek
             </a>
