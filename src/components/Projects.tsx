@@ -22,29 +22,38 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Backend Development Projects",
-      description: "Pengembangan backend dengan Laravel dan Django untuk berbagai aplikasi web dengan fokus pada performa dan keamanan.",
-      tags: ["Laravel", "Django", "PHP", "Python"],
-      image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
-      demoUrl: "#",
+      title: "FullStack Ananta Course",
+      description: "Website kursus yang saya kembangkan untuk memenuhi kebutuhan bisnis client.",
+      tags: ["Laravel", "React", "PHP", "MySQL", "TailwindCSS"],
+      image: "/img/projects/anantacourse.png",
+      demoUrl: "https://anantacourse.id",
       githubUrl: "https://github.com/arif25-glitch"
     },
     {
       id: 2,
-      title: "Frontend Web Applications",
-      description: "Aplikasi web dengan antarmuka yang responsif dan user-friendly menggunakan React dan teknologi modern.",
-      tags: ["React", "JavaScript", "TailwindCSS", "HTML/CSS"],
-      image: "https://images.unsplash.com/photo-1683009427513-28e163402d16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
-      demoUrl: "https://my-portfolio-arif-nur.vercel.app",
+      title: "Toko Arabic Prfume",
+      description: "Aplikasi web yang membantu penjualan produk parfume dari Toko Arabic Parfume.",
+      tags: ["React", "NextJS", "TailwindCSS", "MongoDB"],
+      image: "/img/projects/tokoarabicparfume.png",
+      demoUrl: "https://www.tokoarabicparfume.my.id",
       githubUrl: "https://github.com/arif25-glitch"
     },
     {
       id: 3,
-      title: "IoT Technology Projects",
-      description: "Proyek Internet of Things yang menggabungkan hardware dan software untuk solusi teknologi inovatif.",
-      tags: ["IoT", "Embedded Systems", "Python", "Hardware"],
-      image: "https://images.unsplash.com/photo-1673800479833-d0dd16379f2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
-      demoUrl: "#",
+      title: "Website Kelulusan - SMA NEGERI 1 ABANG",
+      description: "Proyek web aplikasi untuk melihat status kelulusan siswa.",
+      tags: ["Laravel", "React", "PHP", "Redux", "MySQL", "TailwindCSS"],
+      image: "/img/projects/websitekelulusan.png",
+      demoUrl: "https://kelulusan.smanegeri1abang.sch.id",
+      githubUrl: "https://github.com/arif25-glitch"
+    },
+    {
+      id: 4,
+      title: "UMKM Pak Karta",
+      description: "Website produk hasil kolaborasi beberapa mahasiswa dalam penelitian dosen pada UMKM di provinsi Lampung",
+      tags: ["PHP", "MySQL", "TailwindCSS"],
+      image: "/img/projects/umkmpakkartam.png",
+      demoUrl: "https://umkmpakkartam.my.id/",
       githubUrl: "https://github.com/arif25-glitch"
     }
   ];
