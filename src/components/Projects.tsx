@@ -49,12 +49,30 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "UMKM Pak Karta",
+      title: "UMKM Pak Kartam",
       description: "Website produk hasil kolaborasi beberapa mahasiswa dalam penelitian dosen pada UMKM di provinsi Lampung",
       tags: ["PHP", "MySQL", "TailwindCSS"],
       image: "/img/projects/umkmpakkartam.png",
       demoUrl: "https://umkmpakkartam.my.id/",
       githubUrl: "https://github.com/arif25-glitch"
+    },
+    {
+      id: 5,
+      title: "Ezzy Laundry",
+      description: "Website Landing Page yang menampilkan pelayanan dari UMKM Ezzy Laundry",
+      tags: ["React", "MySQL", "TailwindCSS"],
+      image: "/img/projects/ezzylaundry.png",
+      demoUrl: "https://ezzylaundry.vercel.app",
+      githubUrl: "https://github.com/arif25-glitch"
+    },
+    {
+      id: 6,
+      title: "Aplikasi Cek Judul Skripsi",
+      description: "Aplikasi Android untuk cek kemiripan judul skripsi di Teknik Informatika Darmajaya yang saya kembangkan dalam penelitian skripsi saya",
+      tags: ["Android Studio"],
+      image: "/img/projects/aplikasicekjudulskripsi.jpg",
+      demoUrl: "https://github.com/arif25-glitch/Aplikasi_Cek_Judul_Skripsi",
+      githubUrl: "https://github.com/arif25-glitch/Aplikasi_Cek_Judul_Skripsi"
     }
   ];
 
@@ -152,7 +170,7 @@ const Projects = () => {
                       <GlobeAltIcon className="h-4 w-4 mr-1" />
                       Live Demo
                     </a>
-                    <a 
+                    {/* <a 
                       href={project.githubUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
@@ -160,7 +178,7 @@ const Projects = () => {
                     >
                       <CodeBracketIcon className="h-4 w-4 mr-1" />
                       View Code
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

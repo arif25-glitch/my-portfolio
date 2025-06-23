@@ -160,7 +160,7 @@ const Achievements = () => {
                 ))}
                 
                 {/* GitHub Highlight */}
-                <motion.div
+                {/* <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={visible ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
                   transition={{ duration: 0.4, delay: 0.5 }}
@@ -177,7 +177,7 @@ const Achievements = () => {
                     </svg>
                     Lihat Proyek di GitHub
                   </a>
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
           </motion.div>

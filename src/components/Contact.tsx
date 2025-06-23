@@ -193,25 +193,6 @@ const Contact = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Social Links */}
-              <div className="bg-card rounded-xl p-8 shadow-md border border-border/40">
-                <h3 className="text-xl font-semibold mb-6 text-foreground">Connect With Me</h3>
-                
-                <div className="flex flex-wrap gap-4">
-                  {['GitHub', 'LinkedIn', 'Twitter', 'Instagram', 'Dribbble'].map((platform, index) => (
-                    <a
-                      key={index}
-                      href="#"
-                      className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/50 hover:bg-primary/10 hover:text-primary transition-colors"
-                      style={{ transitionDelay: `${index * 50}ms` }}
-                    >
-                      {/* Replace with actual icons */}
-                      <span className="text-sm">{platform.charAt(0)}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>
